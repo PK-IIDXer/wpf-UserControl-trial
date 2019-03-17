@@ -1,0 +1,12 @@
+﻿<UserControl
+  x:Class="LivetApp3.Controls.CustomComboBox"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Name="parent">
+  <Grid>
+    <ComboBox IsEditable="False"
+              ItemsSource="{Binding Path=ItemsSource, ElementName=parent, Mode=TwoWay}"
+              SelectedItem="{Binding Path=SelectedItem, ElementName=parent, Mode=TwoWay}"
+              ItemTemplate="{Binding Path=ItemTemplate, ElementName=parent, Mode=TwoWay}"/>
+  </Grid>
+</UserControl>

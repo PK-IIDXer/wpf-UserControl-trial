@@ -1,0 +1,12 @@
+﻿<UserControl
+  x:Class="LivetApp3.Controls.SimpleUserControl"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Name="parent">
+  <StackPanel Orientation="Horizontal">
+    <Label Content="{Binding Path=Id}"/>
+    <Rectangle Width="50" Fill="{Binding Path=Foreground}"/>
+    <TextBlock Text=" : "/>
+    <TextBox Text="{Binding Path=DataContext}"/>
+  </StackPanel>
+</UserControl>
